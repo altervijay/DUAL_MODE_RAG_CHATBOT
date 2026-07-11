@@ -11,9 +11,6 @@ Document questions go through RAG with citations; data questions go through
 validated text-to-SQL; mixed questions use both in one agent turn. The structured
 data is never embedded, and order facts are never answered from model memory.
 
-See `docs/ROADMAP.md` for the full design reasoning, decisions log, and build
-status.
-
 ## Live demo
 
 - Frontend: https://dual-mode-rag-chatbot.vercel.app
