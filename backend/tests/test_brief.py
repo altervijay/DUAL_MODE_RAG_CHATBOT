@@ -1,5 +1,6 @@
 """
-Manual test list from docs/TASKS.md §6, run against a live backend.
+End-to-end tests against a live backend: document, data, and mixed
+questions, out-of-scope fallback, and the dataset's specific edge cases.
 
 Usage: python -m tests.test_brief [base_url]  (default http://localhost:8000)
 
@@ -89,7 +90,7 @@ def main() -> None:
     ))
 
     print("=" * 70)
-    q = "did order 1234 qualify for a return"  # verbatim from the brief
+    q = "did order 1234 qualify for a return"  # order 1234 doesn't exist in the data
     r = ask(q)
     print(f"Q: {q}\nTOOLS: {[t['tool'] for t in r['tools']]}\nA: {r['answer']}\nCITES: {r['citations']}\n")
     results.append(check(

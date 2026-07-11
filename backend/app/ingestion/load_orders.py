@@ -5,8 +5,7 @@ boot.
 
 Loads backend/data/orders.csv as-is. No delivery_date or quantity column —
 don't add or derive one. Two rows break the ORD-1NNN sequential pattern
-(ORD-1207, ORD-1233) — loaded verbatim, not "fixed". See
-docs/ARCHITECTURE.md "Known schema gaps" / "Dataset quirks".
+(ORD-1207, ORD-1233) and are loaded verbatim rather than corrected.
 """
 
 import pandas as pd

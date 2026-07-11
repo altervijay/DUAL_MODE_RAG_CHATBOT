@@ -1,13 +1,13 @@
 """
-SQL safety guard — this is graded ("no hallucinated SQL columns"), don't
-cut corners with a regex denylist.
+SQL safety guard for generated queries. Uses a real parser instead of a
+regex denylist so it can check column names, not just block keywords.
 
 validate(sql, allowed_columns) -> (is_valid, error_message):
 - parse with sqlglot (postgres dialect); parse failure = reject
 - exactly one statement, and it must be a SELECT
 - every table reference must be `orders` (CTEs/subqueries included)
 - every column reference must be in the live introspected schema passed in
-  by the caller (see db.get_orders_schema) — catches hallucinated columns,
+  by the caller (see db.get_orders_schema) — catches a hallucinated column,
   not just injection
 """
 

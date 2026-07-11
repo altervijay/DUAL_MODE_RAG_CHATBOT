@@ -7,17 +7,17 @@ Chunking: one chunk per section, split on bold heading lines in the
 extracted text (headings are plain bold text, not a PDF outline — this
 covers both the numbered headings ("1. Return Window") and product_faq.pdf's
 unnumbered ones ("Shipping and Delivery")). The first bold line of each file
-is the document title with no body of its own and is dropped. NOT fixed
-token windows — every section is ~40-80 words, and citing a whole section is
-more useful than citing a token fragment.
+is the document title with no body of its own and is dropped. Sections run
+~40-80 words each, which is a more useful citation unit than a fixed-size
+token window.
 
 Embeds with the same model tools.py uses at query time (see
-config.EMBEDDING_MODEL_NAME) — model MUST match between ingest and query.
+config.EMBEDDING_MODEL_NAME) — the two have to match.
 
 Expect ~21 rows (4+4+5+5+4 sections across the five files).
 
-Source files in backend/data/ are fixed ground truth — never edited before
-ingesting (see docs/ARCHITECTURE.md).
+Source files in backend/data/ are the fixed dataset — don't edit them
+before ingesting.
 """
 
 import fitz

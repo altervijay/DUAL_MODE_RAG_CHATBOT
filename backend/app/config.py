@@ -18,14 +18,14 @@ DATABASE_URL = os.environ.get(
     "DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/emb_chatbot"
 )
 
-# Fixed by the brief — never datetime.now(). "Last month" style questions must
-# resolve against this constant so answers stay stable over the fixed dataset.
+# Fixed, never datetime.now() — "last month" style questions need to resolve
+# against a constant so answers stay stable over a fixed dataset.
 ASSESSMENT_DATE = os.environ.get("ASSESSMENT_DATE", "2026-06-15")
 
 EMBEDDING_MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME", "all-MiniLM-L6-v2")
 
-# Sonnet tier per docs/ROADMAP.md §1 — tool routing + short-context RAG +
-# narrow SQL generation doesn't need frontier-tier reasoning.
+# Sonnet tier: tool routing + short-context RAG + narrow SQL generation
+# doesn't need frontier-tier reasoning.
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-5")
 
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"

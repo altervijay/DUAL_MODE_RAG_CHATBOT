@@ -3,8 +3,8 @@ Tool implementations + Anthropic tool-use schema definitions.
 
 - search_documents(query) -> [{id, chunk_text, source_file, section_title}]
   `id` is doc_chunks.id — the model cites by id and router.py resolves those
-  ids against what this tool actually returned in the turn (ROADMAP §4.2).
-  embeds the query locally (same model as ingest_docs.py — must match),
+  ids against what this tool actually returned in the turn.
+  Embeds the query locally (same model as ingest_docs.py — must match),
   cosine search against doc_chunks, top-k=5. The corpus is only ~22 chunks
   across 5 files and some questions legitimately need sections from two
   different files (returns_policy.pdf §4 + warranty_policy.pdf), so k stays

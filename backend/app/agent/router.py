@@ -1,5 +1,5 @@
 """
-The agent loop. This IS the router — there is no separate classifier: Claude
+The agent loop. This is the router — there's no separate classifier: Claude
 decides per turn whether to call `search_documents`, `query_orders`, both, or
 answer directly.
 
@@ -8,20 +8,19 @@ run(message) is an async generator yielding SSE-ready events:
 - ("token", {"text": ...})             streamed answer tokens
 - ("citations", {"citations": [...]})  structured citations, if any
 
-Every turn is a single streaming API call (ROADMAP §4.1 — no hidden
-non-streaming decision pass followed by a second generation). The first
-`content_block_start` event types the turn: `tool_use` → accumulate
-silently and execute; `text` → relay deltas to the client as they arrive.
+Each turn is a single streaming API call. The first `content_block_start`
+event types the turn: a `tool_use` block is accumulated silently and
+executed, a `text` block is relayed to the client as the deltas arrive.
 
-Citations are id-resolved (ROADMAP §4.2): the model ends its answer with a
-`CITATIONS: [<id>, ...]` line naming doc_chunks ids; the stream filter
-strips that line from the token events, and each id is resolved against
-the chunks `search_documents` actually returned earlier in this run — the
-real source_file/section_title come from that lookup, never from the
-model's prose. Ids that don't resolve are dropped silently.
+Citations are resolved by id rather than trusted from the model's own text:
+the model ends its answer with a `CITATIONS: [<id>, ...]` line naming
+doc_chunks ids, the stream filter strips that line out of the token events,
+and each id is checked against the chunks `search_documents` actually
+returned earlier in the same run. The source_file/section_title shown to
+the user come from that lookup. Ids that don't resolve are dropped.
 
-Iterations are capped at MAX_TOOL_TURNS; past the cap the model is forced
-to answer with whatever evidence it has (tool_choice "none").
+Turns are capped at MAX_TOOL_TURNS; past the cap the model has to answer
+with whatever evidence it already has (tool_choice "none").
 """
 
 import json
@@ -124,17 +123,12 @@ async def run(message: str) -> AsyncIterator[tuple[str, dict]]:
         pending = ""
         citations_tail: str | None = None  # per-turn CITATIONS capture
 
-        # No temperature pin: claude-sonnet-5 rejects any explicit sampling
-        # parameter with 400 "`temperature` is deprecated for this model" —
-        # verified empirically BOTH with adaptive thinking active and with
-        # thinking={"type": "disabled"} (it is not the older thinking-gated
-        # restriction; the parameter is removed on this model generation).
-        # Run-to-run variance can't be reduced via sampling params on this
-        # tier. Noted in README limitations.
-        # Thinking is explicitly disabled: sonnet-5 runs adaptive thinking by
-        # default, whose thinking blocks would eat the max_tokens budget and
-        # open turns with a non-text block; this routing workload doesn't
-        # need it.
+        # No temperature pin: claude-sonnet-5 rejects an explicit temperature
+        # parameter outright, so there's no sampling control here (see README
+        # limitations). Thinking is disabled — sonnet-5 runs adaptive
+        # thinking by default, and a thinking block would eat into the
+        # max_tokens budget and open the turn with a non-text block, which
+        # this routing workload doesn't need.
         async with _client.messages.stream(
             model=ANTHROPIC_MODEL,
             max_tokens=MAX_TOKENS,
@@ -147,10 +141,10 @@ async def run(message: str) -> AsyncIterator[tuple[str, dict]]:
             async for event in stream:
                 if event.type == "content_block_start" and relay is None:
                     # First non-thinking block types the turn: text → relay,
-                    # tool_use → accumulate silently and execute (ROADMAP
-                    # §4.1). Thinking blocks never decide the turn — if they
-                    # did, an adaptive-thinking turn would lock relay=False
-                    # and silently swallow the answer.
+                    # tool_use → accumulate silently and execute. Thinking
+                    # blocks never decide the turn, so a turn that opens with
+                    # thinking doesn't lock relay=False and swallow the
+                    # answer that follows.
                     if event.content_block.type == "thinking":
                         continue
                     relay = event.content_block.type == "text"
