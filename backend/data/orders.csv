@@ -1,0 +1,201 @@
+order_id,customer,product,amount,status,order_date
+ORD-1001,Sneha Reddy,Mechanical Keyboard,4999,pending,2026-05-29
+ORD-1002,Tara Bose,USB-C Hub,7497,delivered,2026-02-12
+ORD-1003,Aarav Sharma,Mechanical Keyboard,14997,delivered,2026-05-05
+ORD-1004,Aarav Sharma,Laptop Stand,1899,shipped,2026-01-09
+ORD-1005,Devansh Rao,Laptop Stand,5697,processing,2026-05-09
+ORD-1006,Nikhil Verma,Laptop Stand,3798,shipped,2026-04-03
+ORD-1207,Priya Nair,Wireless Mouse,1299,returned,2026-05-20
+ORD-1008,Vikram Patel,Laptop Stand,3798,delivered,2026-01-25
+ORD-1009,Nikhil Verma,Noise-Cancelling Headphones,17998,processing,2026-01-10
+ORD-1010,Sahil Khan,Bluetooth Speaker,9897,delivered,2025-12-28
+ORD-1011,Arjun Desai,Mechanical Keyboard,14997,delivered,2026-03-23
+ORD-1012,Priya Nair,Noise-Cancelling Headphones,26997,delivered,2026-05-24
+ORD-1013,Pooja Agarwal,Laptop Stand,3798,returned,2025-12-28
+ORD-1014,Arjun Desai,Mechanical Keyboard,9998,delivered,2026-02-14
+ORD-1015,Arjun Desai,USB-C Hub,4998,delivered,2026-03-20
+ORD-1016,Devansh Rao,Mechanical Keyboard,14997,processing,2026-02-23
+ORD-1017,Sahil Khan,USB-C Hub,4998,delivered,2026-02-17
+ORD-1018,Pooja Agarwal,Monitor Arm,5499,processing,2026-05-29
+ORD-1019,Vikram Patel,Laptop Stand,1899,pending,2025-12-31
+ORD-1020,Meera Joshi,Mechanical Keyboard,4999,cancelled,2026-02-23
+ORD-1021,Sahil Khan,Laptop Stand,5697,shipped,2026-03-07
+ORD-1022,Sneha Reddy,Bluetooth Speaker,3299,delivered,2026-05-30
+ORD-1023,Vikram Patel,Monitor Arm,10998,pending,2026-05-09
+ORD-1024,Rohan Mehta,Portable SSD 1TB,14998,delivered,2026-05-15
+ORD-1025,Pooja Agarwal,Bluetooth Speaker,3299,pending,2026-04-26
+ORD-1026,Arjun Desai,USB-C Hub,7497,delivered,2026-01-14
+ORD-1027,Meera Joshi,Ergonomic Chair Cushion,1599,delivered,2026-04-04
+ORD-1028,Pooja Agarwal,Monitor Arm,10998,returned,2026-04-15
+ORD-1029,Nikhil Verma,Mechanical Keyboard,14997,cancelled,2025-12-19
+ORD-1030,Rohan Mehta,Noise-Cancelling Headphones,8999,delivered,2026-02-23
+ORD-1031,Karan Singh,Wireless Mouse,3897,cancelled,2026-04-12
+ORD-1032,Pooja Agarwal,USB-C Hub,7497,cancelled,2026-04-24
+ORD-1233,Vikram Patel,Portable SSD 1TB,7499,returned,2026-04-02
+ORD-1034,Nikhil Verma,Noise-Cancelling Headphones,8999,shipped,2026-01-25
+ORD-1035,Aarav Sharma,Wireless Mouse,3897,delivered,2026-05-01
+ORD-1036,Sneha Reddy,Noise-Cancelling Headphones,17998,delivered,2026-01-14
+ORD-1037,Pooja Agarwal,Mechanical Keyboard,4999,pending,2026-05-11
+ORD-1038,Ananya Iyer,Monitor Arm,5499,delivered,2026-01-03
+ORD-1039,Meera Joshi,USB-C Hub,4998,shipped,2026-05-06
+ORD-1040,Tara Bose,Laptop Stand,5697,pending,2026-04-04
+ORD-1041,Arjun Desai,Webcam 1080p,6998,returned,2026-02-06
+ORD-1042,Sneha Reddy,Bluetooth Speaker,9897,shipped,2026-03-22
+ORD-1043,Devansh Rao,Mechanical Keyboard,9998,delivered,2026-02-12
+ORD-1044,Tara Bose,Ergonomic Chair Cushion,1599,delivered,2026-02-13
+ORD-1045,Aarav Sharma,Wireless Mouse,1299,delivered,2026-05-27
+ORD-1046,Arjun Desai,Mechanical Keyboard,14997,delivered,2026-03-11
+ORD-1047,Sahil Khan,Laptop Stand,5697,delivered,2026-04-20
+ORD-1048,Ananya Iyer,Ergonomic Chair Cushion,3198,delivered,2026-05-12
+ORD-1049,Vikram Patel,Laptop Stand,1899,delivered,2026-03-31
+ORD-1050,Tara Bose,Portable SSD 1TB,14998,shipped,2026-03-17
+ORD-1051,Isha Gupta,Mechanical Keyboard,4999,delivered,2025-12-30
+ORD-1052,Ananya Iyer,Laptop Stand,1899,delivered,2026-01-13
+ORD-1053,Sneha Reddy,Portable SSD 1TB,7499,delivered,2026-01-21
+ORD-1054,Arjun Desai,Bluetooth Speaker,9897,delivered,2026-01-05
+ORD-1055,Pooja Agarwal,Wireless Mouse,1299,returned,2026-05-04
+ORD-1056,Sneha Reddy,USB-C Hub,4998,shipped,2026-02-15
+ORD-1057,Vikram Patel,Wireless Mouse,1299,delivered,2026-03-29
+ORD-1058,Tara Bose,Bluetooth Speaker,6598,delivered,2026-02-22
+ORD-1059,Sneha Reddy,Bluetooth Speaker,3299,delivered,2026-05-08
+ORD-1060,Tara Bose,Ergonomic Chair Cushion,4797,shipped,2025-12-31
+ORD-1061,Devansh Rao,Wireless Mouse,1299,shipped,2026-03-07
+ORD-1062,Priya Nair,USB-C Hub,2499,returned,2026-05-01
+ORD-1063,Pooja Agarwal,Mechanical Keyboard,14997,delivered,2026-02-02
+ORD-1064,Meera Joshi,Portable SSD 1TB,7499,returned,2026-02-15
+ORD-1065,Priya Nair,Ergonomic Chair Cushion,4797,delivered,2026-02-18
+ORD-1066,Sahil Khan,Ergonomic Chair Cushion,4797,shipped,2026-04-03
+ORD-1067,Sneha Reddy,Laptop Stand,5697,processing,2026-02-21
+ORD-1068,Karan Singh,Portable SSD 1TB,7499,processing,2026-02-22
+ORD-1069,Meera Joshi,Noise-Cancelling Headphones,8999,delivered,2026-04-13
+ORD-1070,Devansh Rao,Mechanical Keyboard,4999,shipped,2026-05-10
+ORD-1071,Sahil Khan,USB-C Hub,4998,cancelled,2026-02-22
+ORD-1072,Pooja Agarwal,Noise-Cancelling Headphones,17998,delivered,2026-02-17
+ORD-1073,Nikhil Verma,Webcam 1080p,10497,returned,2026-05-05
+ORD-1074,Devansh Rao,Monitor Arm,5499,processing,2026-06-02
+ORD-1075,Sahil Khan,Mechanical Keyboard,4999,delivered,2026-03-03
+ORD-1076,Meera Joshi,Monitor Arm,5499,delivered,2026-01-13
+ORD-1077,Pooja Agarwal,Noise-Cancelling Headphones,8999,processing,2026-02-08
+ORD-1078,Sahil Khan,Monitor Arm,10998,delivered,2026-02-22
+ORD-1079,Karan Singh,Mechanical Keyboard,14997,delivered,2025-12-30
+ORD-1080,Arjun Desai,Wireless Mouse,2598,pending,2025-12-28
+ORD-1081,Tara Bose,USB-C Hub,7497,delivered,2026-02-22
+ORD-1082,Sahil Khan,Monitor Arm,5499,delivered,2026-04-05
+ORD-1083,Isha Gupta,USB-C Hub,7497,delivered,2026-06-11
+ORD-1084,Aarav Sharma,Monitor Arm,5499,delivered,2026-05-15
+ORD-1085,Sneha Reddy,Noise-Cancelling Headphones,8999,cancelled,2026-03-05
+ORD-1086,Nikhil Verma,Laptop Stand,5697,delivered,2026-06-09
+ORD-1087,Sahil Khan,Portable SSD 1TB,22497,pending,2026-05-09
+ORD-1088,Aarav Sharma,USB-C Hub,2499,cancelled,2026-02-15
+ORD-1089,Pooja Agarwal,Noise-Cancelling Headphones,17998,pending,2026-01-31
+ORD-1090,Priya Nair,Webcam 1080p,3499,pending,2026-02-18
+ORD-1091,Pooja Agarwal,Wireless Mouse,2598,delivered,2026-03-24
+ORD-1092,Pooja Agarwal,Noise-Cancelling Headphones,17998,cancelled,2026-04-13
+ORD-1093,Vikram Patel,Laptop Stand,1899,processing,2026-02-13
+ORD-1094,Karan Singh,Webcam 1080p,3499,returned,2026-03-11
+ORD-1095,Pooja Agarwal,Monitor Arm,10998,processing,2026-03-16
+ORD-1096,Karan Singh,Noise-Cancelling Headphones,8999,delivered,2026-05-03
+ORD-1097,Meera Joshi,Ergonomic Chair Cushion,3198,delivered,2026-01-31
+ORD-1098,Vikram Patel,Noise-Cancelling Headphones,26997,pending,2026-04-07
+ORD-1099,Meera Joshi,Monitor Arm,5499,delivered,2026-05-21
+ORD-1100,Aarav Sharma,Webcam 1080p,3499,processing,2026-02-03
+ORD-1101,Tara Bose,Monitor Arm,16497,processing,2026-04-29
+ORD-1102,Arjun Desai,Laptop Stand,3798,delivered,2026-06-06
+ORD-1103,Priya Nair,Ergonomic Chair Cushion,3198,processing,2026-03-11
+ORD-1104,Isha Gupta,Monitor Arm,10998,processing,2026-03-03
+ORD-1105,Vikram Patel,Webcam 1080p,10497,delivered,2026-03-30
+ORD-1106,Rohan Mehta,Portable SSD 1TB,22497,pending,2026-06-05
+ORD-1107,Pooja Agarwal,Ergonomic Chair Cushion,3198,delivered,2026-05-23
+ORD-1108,Nikhil Verma,Webcam 1080p,6998,delivered,2025-12-17
+ORD-1109,Ananya Iyer,Ergonomic Chair Cushion,4797,delivered,2026-05-14
+ORD-1110,Sahil Khan,Laptop Stand,5697,shipped,2026-04-09
+ORD-1111,Arjun Desai,Mechanical Keyboard,9998,shipped,2026-01-29
+ORD-1112,Nikhil Verma,Noise-Cancelling Headphones,8999,pending,2026-05-24
+ORD-1113,Rohan Mehta,Webcam 1080p,3499,pending,2026-02-15
+ORD-1114,Meera Joshi,Wireless Mouse,1299,returned,2025-12-23
+ORD-1115,Meera Joshi,Bluetooth Speaker,6598,cancelled,2026-01-04
+ORD-1116,Rohan Mehta,Portable SSD 1TB,14998,delivered,2026-02-04
+ORD-1117,Sneha Reddy,Wireless Mouse,1299,pending,2026-06-02
+ORD-1118,Sneha Reddy,Monitor Arm,10998,delivered,2026-01-31
+ORD-1119,Arjun Desai,Bluetooth Speaker,3299,pending,2026-01-17
+ORD-1120,Nikhil Verma,Monitor Arm,16497,delivered,2026-05-01
+ORD-1121,Vikram Patel,Ergonomic Chair Cushion,4797,cancelled,2026-04-09
+ORD-1122,Ananya Iyer,Bluetooth Speaker,3299,pending,2026-05-06
+ORD-1123,Karan Singh,Webcam 1080p,3499,cancelled,2026-04-11
+ORD-1124,Ananya Iyer,Bluetooth Speaker,9897,delivered,2026-04-29
+ORD-1125,Isha Gupta,Webcam 1080p,3499,delivered,2026-01-05
+ORD-1126,Vikram Patel,Mechanical Keyboard,4999,delivered,2026-05-04
+ORD-1127,Vikram Patel,USB-C Hub,7497,delivered,2026-06-12
+ORD-1128,Aarav Sharma,Noise-Cancelling Headphones,26997,shipped,2026-03-31
+ORD-1129,Meera Joshi,Portable SSD 1TB,14998,cancelled,2026-02-07
+ORD-1130,Aarav Sharma,Wireless Mouse,3897,delivered,2026-06-13
+ORD-1131,Pooja Agarwal,Webcam 1080p,6998,cancelled,2026-03-17
+ORD-1132,Nikhil Verma,Monitor Arm,16497,pending,2026-04-03
+ORD-1133,Vikram Patel,Laptop Stand,3798,delivered,2026-05-20
+ORD-1134,Arjun Desai,Wireless Mouse,2598,delivered,2026-04-20
+ORD-1135,Meera Joshi,USB-C Hub,4998,cancelled,2026-03-30
+ORD-1136,Arjun Desai,Wireless Mouse,2598,shipped,2026-05-02
+ORD-1137,Pooja Agarwal,Mechanical Keyboard,14997,delivered,2025-12-23
+ORD-1138,Isha Gupta,USB-C Hub,2499,delivered,2026-04-14
+ORD-1139,Sahil Khan,Bluetooth Speaker,6598,delivered,2026-02-09
+ORD-1140,Priya Nair,Webcam 1080p,6998,delivered,2026-03-24
+ORD-1141,Isha Gupta,Wireless Mouse,3897,shipped,2026-04-16
+ORD-1142,Aarav Sharma,Mechanical Keyboard,14997,delivered,2026-02-12
+ORD-1143,Sneha Reddy,Laptop Stand,1899,processing,2026-02-18
+ORD-1144,Sneha Reddy,Bluetooth Speaker,9897,delivered,2026-01-18
+ORD-1145,Meera Joshi,Webcam 1080p,6998,delivered,2026-04-15
+ORD-1146,Aarav Sharma,USB-C Hub,4998,delivered,2026-01-15
+ORD-1147,Vikram Patel,Ergonomic Chair Cushion,4797,cancelled,2026-03-06
+ORD-1148,Pooja Agarwal,Laptop Stand,1899,shipped,2026-03-28
+ORD-1149,Karan Singh,Laptop Stand,1899,processing,2026-05-26
+ORD-1150,Meera Joshi,Ergonomic Chair Cushion,1599,pending,2026-06-10
+ORD-1151,Isha Gupta,Noise-Cancelling Headphones,26997,delivered,2025-12-27
+ORD-1152,Pooja Agarwal,Monitor Arm,16497,delivered,2026-01-03
+ORD-1153,Isha Gupta,Bluetooth Speaker,3299,delivered,2026-04-03
+ORD-1154,Rohan Mehta,Bluetooth Speaker,9897,delivered,2026-05-28
+ORD-1155,Devansh Rao,Webcam 1080p,10497,pending,2026-04-29
+ORD-1156,Meera Joshi,Bluetooth Speaker,6598,cancelled,2026-04-19
+ORD-1157,Priya Nair,Noise-Cancelling Headphones,8999,cancelled,2026-02-23
+ORD-1158,Meera Joshi,Bluetooth Speaker,3299,pending,2026-02-26
+ORD-1159,Pooja Agarwal,Portable SSD 1TB,14998,delivered,2026-05-22
+ORD-1160,Nikhil Verma,USB-C Hub,4998,delivered,2026-03-10
+ORD-1161,Tara Bose,Noise-Cancelling Headphones,17998,cancelled,2026-02-21
+ORD-1162,Sneha Reddy,Monitor Arm,5499,shipped,2026-02-25
+ORD-1163,Devansh Rao,Laptop Stand,5697,delivered,2026-01-07
+ORD-1164,Ananya Iyer,Bluetooth Speaker,9897,processing,2026-02-16
+ORD-1165,Tara Bose,Mechanical Keyboard,9998,delivered,2025-12-21
+ORD-1166,Ananya Iyer,Webcam 1080p,10497,shipped,2026-02-17
+ORD-1167,Tara Bose,Monitor Arm,10998,delivered,2026-05-07
+ORD-1168,Karan Singh,Noise-Cancelling Headphones,17998,processing,2026-05-06
+ORD-1169,Sneha Reddy,Webcam 1080p,3499,delivered,2026-03-05
+ORD-1170,Nikhil Verma,Mechanical Keyboard,14997,shipped,2026-03-07
+ORD-1171,Ananya Iyer,USB-C Hub,2499,delivered,2026-06-11
+ORD-1172,Priya Nair,Ergonomic Chair Cushion,4797,shipped,2026-02-25
+ORD-1173,Karan Singh,Webcam 1080p,3499,delivered,2026-02-04
+ORD-1174,Aarav Sharma,Monitor Arm,5499,delivered,2025-12-20
+ORD-1175,Arjun Desai,Webcam 1080p,10497,returned,2026-05-07
+ORD-1176,Ananya Iyer,Mechanical Keyboard,4999,shipped,2026-04-21
+ORD-1177,Aarav Sharma,Bluetooth Speaker,6598,delivered,2026-04-18
+ORD-1178,Vikram Patel,Bluetooth Speaker,3299,cancelled,2026-02-19
+ORD-1179,Aarav Sharma,Mechanical Keyboard,14997,processing,2026-04-21
+ORD-1180,Priya Nair,USB-C Hub,7497,returned,2026-01-24
+ORD-1181,Meera Joshi,Mechanical Keyboard,14997,pending,2026-02-18
+ORD-1182,Vikram Patel,Ergonomic Chair Cushion,1599,pending,2026-05-18
+ORD-1183,Vikram Patel,Bluetooth Speaker,6598,cancelled,2026-04-11
+ORD-1184,Tara Bose,Ergonomic Chair Cushion,4797,delivered,2026-03-05
+ORD-1185,Arjun Desai,Laptop Stand,5697,delivered,2026-01-11
+ORD-1186,Priya Nair,USB-C Hub,2499,delivered,2026-01-06
+ORD-1187,Meera Joshi,Wireless Mouse,2598,shipped,2026-01-26
+ORD-1188,Tara Bose,Webcam 1080p,3499,delivered,2026-04-16
+ORD-1189,Sahil Khan,Bluetooth Speaker,3299,processing,2026-02-27
+ORD-1190,Sneha Reddy,Ergonomic Chair Cushion,4797,pending,2026-02-22
+ORD-1191,Rohan Mehta,Mechanical Keyboard,14997,delivered,2026-04-04
+ORD-1192,Nikhil Verma,USB-C Hub,2499,delivered,2026-02-23
+ORD-1193,Sahil Khan,Ergonomic Chair Cushion,4797,cancelled,2026-03-05
+ORD-1194,Karan Singh,Bluetooth Speaker,3299,shipped,2026-02-28
+ORD-1195,Ananya Iyer,Portable SSD 1TB,14998,shipped,2026-06-14
+ORD-1196,Vikram Patel,Mechanical Keyboard,14997,delivered,2026-04-08
+ORD-1197,Sneha Reddy,Ergonomic Chair Cushion,3198,delivered,2026-03-09
+ORD-1198,Nikhil Verma,Ergonomic Chair Cushion,4797,returned,2026-06-07
+ORD-1199,Nikhil Verma,Webcam 1080p,10497,delivered,2026-06-07
+ORD-1200,Sahil Khan,Bluetooth Speaker,9897,processing,2026-01-30

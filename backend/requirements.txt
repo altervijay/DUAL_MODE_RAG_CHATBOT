@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sse-starlette
+anthropic
+psycopg[binary,pool]
+sentence-transformers
+sqlglot
+pymupdf
+python-dotenv
+pandas
