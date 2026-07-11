@@ -120,7 +120,10 @@ export default function ChatWindow() {
 
   return (
     <main style={styles.page}>
-      <h1 style={styles.title}>Northwind Gadgets — Support Chat</h1>
+      <header style={styles.header}>
+        <h1 style={styles.title}>Dual-Mode RAG Chatbot</h1>
+        <span style={styles.subtitle}>Northwind Gadgets — Support Chat</span>
+      </header>
       <div style={styles.list}>
         {messages.map((m, i) => (
           <div
@@ -167,32 +170,36 @@ export default function ChatWindow() {
         ))}
         <div ref={bottomRef} />
       </div>
-      <form
-        style={styles.form}
-        onSubmit={(e) => {
-          e.preventDefault();
-          send();
-        }}
-      >
-        <input
-          style={styles.input}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask about policies or orders…"
-          disabled={busy}
-        />
-        <button style={styles.button} disabled={busy || !input.trim()}>
-          Send
-        </button>
-      </form>
+      <footer style={styles.footer}>
+        <form
+          style={styles.form}
+          onSubmit={(e) => {
+            e.preventDefault();
+            send();
+          }}
+        >
+          <input
+            style={styles.input}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Ask about policies or orders…"
+            disabled={busy}
+          />
+          <button style={styles.button} disabled={busy || !input.trim()}>
+            Send
+          </button>
+        </form>
+      </footer>
     </main>
   );
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page: { maxWidth: 760, margin: "0 auto", padding: 16, display: "flex", flexDirection: "column", height: "100vh", fontFamily: "system-ui, sans-serif" },
-  title: { fontSize: 18, margin: "8px 0 16px" },
-  list: { flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: 12, paddingBottom: 12 },
+  page: { maxWidth: 760, margin: "0 auto", padding: 0, display: "flex", flexDirection: "column", height: "100vh", fontFamily: "system-ui, sans-serif" },
+  header: { flexShrink: 0, padding: "14px 16px", borderBottom: "1px solid #e2e8f0", background: "#fff", display: "flex", alignItems: "baseline", gap: 10 },
+  title: { fontSize: 18, margin: 0, fontWeight: 700 },
+  subtitle: { fontSize: 13, color: "#64748b" },
+  list: { flex: 1, overflowY: "auto", display: "flex", flexDirection: "column", gap: 12, padding: 16 },
   msg: { borderRadius: 10, padding: "10px 14px", maxWidth: "85%", whiteSpace: "pre-wrap" },
   user: { alignSelf: "flex-end", background: "#2563eb", color: "#fff" },
   assistant: { alignSelf: "flex-start", background: "#f1f5f9", color: "#111" },
@@ -204,7 +211,8 @@ const styles: Record<string, React.CSSProperties> = {
   summary: { cursor: "pointer" },
   ul: { margin: "6px 0", paddingLeft: 18 },
   sql: { background: "#0f172a", color: "#e2e8f0", padding: 8, borderRadius: 6, overflowX: "auto", fontSize: 11 },
-  form: { display: "flex", gap: 8, paddingTop: 8, borderTop: "1px solid #e2e8f0" },
+  footer: { flexShrink: 0, borderTop: "1px solid #e2e8f0", background: "#fff", padding: 12 },
+  form: { display: "flex", gap: 8 },
   input: { flex: 1, padding: "10px 12px", borderRadius: 8, border: "1px solid #cbd5e1", fontSize: 14 },
   button: { padding: "10px 16px", borderRadius: 8, border: "none", background: "#2563eb", color: "#fff", cursor: "pointer" },
 };

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "EMB Global Chatbot",
+  title: "Dual-Mode RAG Chatbot",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
