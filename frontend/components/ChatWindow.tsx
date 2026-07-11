@@ -122,7 +122,7 @@ export default function ChatWindow() {
     <main style={styles.page}>
       <header style={styles.header}>
         <h1 style={styles.title}>Dual-Mode RAG Chatbot</h1>
-        <span style={styles.subtitle}>Northwind Gadgets — Support Chat</span>
+        <span style={styles.subtitle}>Support Chat</span>
       </header>
       <div style={styles.list}>
         {messages.map((m, i) => (
