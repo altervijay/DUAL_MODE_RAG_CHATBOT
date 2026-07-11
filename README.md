@@ -16,7 +16,14 @@ status.
 
 ## Live demo
 
-TODO: <live URL>
+- Frontend: https://dual-mode-rag-chatbot.vercel.app
+- Backend: https://dual-mode-rag-chatbot.onrender.com (`GET /health`)
+
+Note: the Render backend is on a plan that cold-starts after ~15 min idle —
+the first request after a gap can take up to a couple of minutes while the
+container spins up and reloads the embedding model. Confirm this is on a
+plan that doesn't do this before treating the URL as demo-ready (see
+Known limitations).
 
 ## Architecture
 
@@ -133,3 +140,9 @@ Backend: http://localhost:8000 (`GET /health`, `POST /chat` — SSE stream of
 - **No retry on transient API errors** — a rate-limit or network failure
   mid-request surfaces as an `error` event to the user rather than being
   retried.
+- **Render cold start observed in production** — a request after ~15 min of
+  inactivity took roughly two minutes to return (container spin-up + model
+  reload), which is a real risk for a "live URL is mandatory" deliverable if
+  it's tested unannounced. Verify the Render plan is one that stays warm, or
+  document the expected delay explicitly here so it isn't mistaken for a
+  broken deployment.
