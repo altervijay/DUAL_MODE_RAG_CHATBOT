@@ -1,13 +1,4 @@
-"""
-Postgres connection (psycopg) + pgvector setup.
 
-- get_pool() / get_conn(): lazy singleton connection pool
-- init_db(): CREATE EXTENSION IF NOT EXISTS vector (idempotent, run at startup
-  and by the ingestion scripts)
-- get_orders_schema(): introspect the live `orders` schema for injection into
-  the agent's system prompt and the SQL guard — never hand-type this schema
-  elsewhere in the codebase
-"""
 
 import atexit
 
