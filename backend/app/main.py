@@ -1,12 +1,4 @@
-"""
-FastAPI app. Single POST /chat endpoint, SSE streaming.
 
-Event order per request: `tool` events (one per executed tool call), then
-`token` events for the streamed answer, then an optional `citations` event,
-then `done`. Failures mid-stream (rate limit, bad key, network) are caught
-and emitted as an `error` event so the frontend can render them instead of
-leaving the assistant bubble blank. See app/models.py.
-"""
 
 import json
 import logging
